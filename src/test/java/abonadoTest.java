@@ -4,12 +4,14 @@
  */
 
 import java.time.LocalDate;
+import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Timeout;
 import temaF.Abonado;
 
 /**
@@ -44,6 +46,44 @@ public class abonadoTest {
     @AfterEach
     public void tearDown() {
         System.out.println("--------------------------------------------------");
+    }
+    @Test
+    public void testValidarPsw() {
+        assertTrue(ciu.validarIngreso(123456)); 
+    }
+
+    @Test
+    public void testValidarEmail() {
+        String email = "alybelp7@gmail.com";
+        boolean esValido = email.contains("@") && email.contains(".") && email.length() < 20;
+        assertTrue(esValido);
+    }
+
+    @Test
+    public void TestCambioPass() {
+        String newPass = "1234";
+        ciu.cambioPassword(newPass);
+        assertEquals(1234, ciu.getPassword()); 
+        System.out.println("La contraseña cambió a: " + ciu.getPassword());
+    }
+
+    @Test
+    
+    @Timeout(value = 30, unit = TimeUnit.MILLISECONDS)
+    public void testDelay() throws InterruptedException {
+        ciu.delay(45);
+    }
+
+    @Test
+    public void testAbonadosDiferentes() {
+        Abonado c1 = new Abonado();
+        c1.cambioPassword("1111");
+        
+        Abonado c2 = new Abonado();
+        c2.cambioPassword("2222");
+        
+        c1.abonadosDiferentes(c2);
+        assertNotSame(c1, c2, "misma persona");
     }
 }
 
