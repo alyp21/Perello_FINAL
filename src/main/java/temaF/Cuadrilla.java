@@ -27,5 +27,53 @@ public class Cuadrilla {
         this.lider = lider;
         this.auxiliares = auxiliares;
     }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public int getCantidadTrabajadores() {
+        return cantidadTrabajadores;
+    }
+
+    public void setCantidadTrabajadores(int cantidadTrabajadores) {
+        this.cantidadTrabajadores = cantidadTrabajadores;
+    }
+
+    public String getEquipamiento() {
+        return equipamiento;
+    }
+
+    public void setEquipamiento(String equipamiento) {
+        this.equipamiento = equipamiento;
+    }
+
+    public String getMateriales() {
+        return materiales;
+    }
+
+    public void setMateriales(String materiales) {
+        this.materiales = materiales;
+    }
+
+    public Trabajador getLider() {
+        return lider;
+    }
+
+    public void setLider(Trabajador lider) {
+        this.lider = lider;
+    }
+
+    public List<Trabajador> getAuxiliares() {
+        return auxiliares;
+    }
+
+    public void setAuxiliares(List<Trabajador> auxiliares) {
+        this.auxiliares = auxiliares;
+    }
     
 }

@@ -21,6 +21,38 @@ public class Domicilio {
         this.altura = altura;
         this.barrio = barrio;
     }
+
+    public String getCalleA() {
+        return calleA;
+    }
+
+    public void setCalleA(String calleA) {
+        this.calleA = calleA;
+    }
+
+    public String getCalleB() {
+        return calleB;
+    }
+
+    public void setCalleB(String calleB) {
+        this.calleB = calleB;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public String getBarrio() {
+        return barrio;
+    }
+
+    public void setBarrio(String barrio) {
+        this.barrio = barrio;
+    }
     
     
 }

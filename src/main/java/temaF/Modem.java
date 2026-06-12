@@ -29,6 +29,70 @@ public class Modem {
         this.nroLeds = nroLeds;
         this.tieneFirewall = tieneFirewall;
     }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(String velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    public int getPuertosEthernet() {
+        return puertosEthernet;
+    }
+
+    public void setPuertosEthernet(int puertosEthernet) {
+        this.puertosEthernet = puertosEthernet;
+    }
+
+    public int getPuertoCoaxial() {
+        return puertoCoaxial;
+    }
+
+    public void setPuertoCoaxial(int puertoCoaxial) {
+        this.puertoCoaxial = puertoCoaxial;
+    }
+
+    public String getProtocoloRed() {
+        return protocoloRed;
+    }
+
+    public void setProtocoloRed(String protocoloRed) {
+        this.protocoloRed = protocoloRed;
+    }
+
+    public int getNroLeds() {
+        return nroLeds;
+    }
+
+    public void setNroLeds(int nroLeds) {
+        this.nroLeds = nroLeds;
+    }
+
+    public boolean isTieneFirewall() {
+        return tieneFirewall;
+    }
+
+    public void setTieneFirewall(boolean tieneFirewall) {
+        this.tieneFirewall = tieneFirewall;
+    }
     
     
 }
