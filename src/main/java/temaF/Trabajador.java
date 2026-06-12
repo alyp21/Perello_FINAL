@@ -10,4 +10,15 @@ package temaF;
  */
 public class Trabajador {
     
+    private int id;
+    private String puesto;
+    private boolean ocupado;
+
+    public Trabajador(int id, String puesto, boolean ocupado) {
+        this.id = id;
+        this.puesto = puesto;
+        this.ocupado = ocupado;
+    }
+    
+    
 }

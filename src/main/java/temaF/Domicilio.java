@@ -10,4 +10,17 @@ package temaF;
  */
 public class Domicilio {
     
+    private String calleA;
+    private String calleB;
+    private int altura;
+    private String barrio;
+
+    public Domicilio(String calleA, String calleB, int altura, String barrio) {
+        this.calleA = calleA;
+        this.calleB = calleB;
+        this.altura = altura;
+        this.barrio = barrio;
+    }
+    
+    
 }

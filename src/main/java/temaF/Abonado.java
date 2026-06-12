@@ -10,4 +10,31 @@ package temaF;
  */
 public class Abonado {
     
+    private String celular;
+    private String mail;
+    private Domicilio domicilio;
+    private boolean debitoAutomatico;
+    private int password;
+
+    public Abonado() {
+    }
+
+    public Abonado(String celular, String mail, Domicilio domicilio, boolean debitoAutomatico, int password) {
+        this.celular = celular;
+        this.mail = mail;
+        this.domicilio = domicilio;
+        this.debitoAutomatico = debitoAutomatico;
+        this.password = password;
+    }
+    
+    public boolean validarIngreso (int password){
+        
+        return false;
+        
+    }
+    
+    public void cambioPassword(String passNueva){
+        
+    }
+    
 }
