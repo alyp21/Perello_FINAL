@@ -80,10 +80,10 @@ public class Abonado extends Persona {
     public void cambioPassword(String passNueva){
         
         if(passNueva.equals("")){
-            System.out.println("Ingresa una contraseña valida");
+            System.out.println("Ingresa una contrasena valida");
         } else {
             this.password = Integer.parseInt(passNueva);
-            System.out.println("La contraseña se actualizo correctamente");
+            System.out.println("La contrasena se actualizo correctamente");
         }
     }
     
